@@ -4,7 +4,7 @@ import cors from 'cors';
 import morgan from 'morgan';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import productosRouter from './src/routes/productos.routes.js';
+import recetasRouter from './src/Routes/recetas.routes.js'
 import './src/database/database.js'
 
 //1  puerto
@@ -26,5 +26,5 @@ app.use(express.static(path.join(__dirname,'/public')))
 
 //3  rutas
 
-app.use('/api', productosRouter )
+app.use('/api', recetasRouter )
 
