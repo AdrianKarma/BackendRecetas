@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "Backend para el Blog de Recetas",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node index.js"
-   
   },
   "keywords": [],
   "author": "Adrian Chanampa",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }
